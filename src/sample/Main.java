@@ -6,9 +6,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Main extends Application {
+public class Main /* extends Application */ {
 
+    /*
     @Override
+
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Colas");
@@ -19,5 +21,20 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    */
+
+    public static void main(String[] args){
+        Cola cola = new Cola();
+
+        cola.insertar(10);
+        cola.insertar(5);
+        cola.insertar(19);
+        cola.mostrar();
+        cola.extraer();
+        cola.mostrar();
+        cola.insertar(2);
+        cola.mostrar();
     }
 }
