@@ -5,6 +5,7 @@ package sample;
  */
 public class Cola {
     private Nodo frente;
+    private int size;
 
     public Cola(){
         this.frente = null;
@@ -21,6 +22,7 @@ public class Cola {
             }
             temp.setProximo(nuevo);
         }
+        size++;
     }
 
     public void mostrar(){
@@ -37,6 +39,10 @@ public class Cola {
         }
     }
 
+    public int getSize(){
+        return size;
+    }
+
     public int extraer(){
         if(frente == null){
             return 0;
@@ -45,6 +51,7 @@ public class Cola {
             int valorExtraer = frente.getValor();
             frente  = frente.getProximo();
             System.out.println("Valor extraiído:  " + valorExtraer);
+            size--;
             return valorExtraer;
         }
     }
