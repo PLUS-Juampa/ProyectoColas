@@ -44,7 +44,7 @@ public class Cola {
         else {
             int valorExtraer = frente.getValor();
             frente  = frente.getProximo();
-            System.out.println("Valor extraiído:  " + frente.getValor());
+            System.out.println("Valor extraiído:  " + valorExtraer);
             return valorExtraer;
         }
     }
