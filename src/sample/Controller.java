@@ -50,7 +50,7 @@ public class Controller implements Initializable{
                         Alert alert = new Alert(Alert.AlertType.ERROR);
                         alert.setTitle("Insertar Número");
                         alert.setHeaderText("Insersión de Número");
-                        alert.setContentText("El valor a insertar debe ser entero");
+                        alert.setContentText("Sólo puede ingresar números enteros");
                         alert.showAndWait();
                         txtInsertar.requestFocus();
                     }
